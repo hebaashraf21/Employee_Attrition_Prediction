@@ -1,0 +1,68 @@
+# Heba Ashraf Raslan Sec:2 BN:32
+
+from collections import defaultdict
+from collections import deque
+
+class Graph:
+    def __init__(self):
+        self.adj_list = defaultdict(list)
+
+    def add_edge(self, u, v):
+        self.adj_list[u].append(v)
+        self.adj_list[v].append(u)
+
+
+    def simulate_rreq(self, src, dest):
+        visited = set()
+        route = {}
+
+        queue = deque()
+        queue.append(src)
+        visited.add(src)
+        route[src] = [src]
+
+        while queue:
+            curr = queue.popleft()
+
+            if curr == dest:
+                continue  # Skip destination node for efficiency
+
+            for neighbor in sorted(self.adj_list[curr]):
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    route[neighbor] = route[curr] + [neighbor]
+                    queue.append(neighbor)
+
+        # Extract paths from route (optional)
+        paths = {k: v for k, v in route.items() if k != dest}
+        return paths
+
+    def print_routes(self, src, dest):
+        paths = self.simulate_rreq(src, dest)
+
+        for i in range(1, len(self.adj_list) + 1):
+            if i == src:
+                print(paths[src][0])
+            elif i not in paths:
+                print(-1)
+            else:
+                print(" ".join(map(str, paths[i])))
+
+
+
+def read_input_from_user():
+    n, m = map(int, input().split())
+
+    graph = Graph()
+
+    for _ in range(m):
+        x, y = map(int, input().split())
+        graph.add_edge(x, y)
+
+    source, destination = map(int, input().split())
+
+    return graph, source, destination
+
+
+graph, source, destination = read_input_from_user()
+graph.print_routes(source, destination)
