@@ -18,15 +18,16 @@ The performance of our machine learning model will be evaluated using metrics su
 ## 🧐 Data Exploring
 (1) Dataset has 1470 rows and  35 columns. <br>
 (2) Plot histogram for each numeric variable/feature of the dataset.
-![output](https://github.com/hebaashraf21/KNN_K-means_PCA_CUDA_Implementation/assets/90224487/5713b2f9-2158-447c-9925-4a55b7512ec5)
+<img src="assets/histograms.png" alt="Histograms Image" >
+
 (3) Check for nulls & duplicates <strong>➺</strong> Total number of duplicates : 0, Total number of missing values : 0<br>
 (4) Get the number of unique values for each column.<br>
 (5) Explore categorical featuresׂ <strong>➺</strong> Total number of categorical variable : 8<br>
 (6) Explore outliers <strong>➺</strong> Print number of outliers in each column.<br>
 (7) Confusion matrix:<br>
-![output](https://github.com/hebaashraf21/KNN_K-means_PCA_CUDA_Implementation/assets/90224487/84d19aca-cf72-42a7-83f3-b8afbe8a24cc)
+<img src="assets/confusion_matrix.png" alt="Confusion matrix Image" >
 (8) Check data imbalance.<br>
-![output](https://github.com/hebaashraf21/KNN_K-means_PCA_CUDA_Implementation/assets/90224487/48cfcd2e-3960-4734-895d-74e8f37f1dea)
+<img src="assets/data_balance.png" alt="Attrition Balance Image" >
 
 
 ## 🔧 Preprocessing
@@ -37,4 +38,5 @@ The performance of our machine learning model will be evaluated using metrics su
 4- Scale the date.<br>
 5- Split The Data into training, validation, and testing sets.<br>
 6- Resampling.<br>
+<img src="assets/after_resampling.png" alt="After resampling Image" >
 
