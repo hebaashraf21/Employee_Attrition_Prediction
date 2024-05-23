@@ -47,3 +47,81 @@ The performance of our machine learning model will be evaluated using metrics su
 ### Zero-R model (baseline model):
 
 <img src="assets/zero-R-metrics.png" alt="Zero-R" >
+
+### AdaBoost
+
+**Performing grid search to get the best parameters:**
+
+<img src="assets/AdaBoost/grid_search.png" alt="Grid Search" >
+
+**Parameters of Best Model:**
+
+<img src="assets/AdaBoost/best_model.png" alt="Best Model" >
+
+**Evaluation metrics on Validation Set:**
+
+<img src="assets/AdaBoost/evaluation_metrics.png" alt="evaluation_metrics" >
+
+**Classification report for validation set:**
+
+<img src="assets/AdaBoost/val_classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for validation set**
+
+<img src="assets/AdaBoost/confusion_matrix.png" alt="Classifiction report" >
+
+**Learning Curve (Scores)**
+
+<img src="assets/AdaBoost/learning_curve_score.png" alt="Classifiction report" >
+
+**Learning Curve (errors)**
+
+<img src="assets/AdaBoost/learning_curve_error.png" alt="Classifiction report" >
+
+**AdaBoost Learning Curve Insights:**
+
+• The decreasing training score suggests that as more training examples are provided,
+the model is exposed to a wider variety of instances and is learning to generalize
+better.
+
+• This is a positive sign as it indicates that the model is not memorizing the training data
+but rather learning meaningful patterns.
+
+• The increasing validation score indicates that the model's performance on unseen
+data is improving as more training examples are provided.
+
+• This suggests that the model is generalizing well to new instances and is not overfitting
+to the training data.
+
+• The small gap between the training and validation scores suggests that the model is
+not suffering from significant overfitting.
+
+• The fact that both scores are increasing with a small gap indicates that the model is
+learning to generalize well to unseen data without excessively fitting to the training
+data.
+
+• The fact that both the training and validation scores are eventually increasing slowly
+that the model's performance is stabilizing as more data is provided.
+
+• This is a desirable outcome, indicating that additional data may not significantly
+improve the model's performance further.
+
+**Training & Validation errors vs number of learning estimators:**
+
+<img src="assets/AdaBoost/errors_vs_number_of_estimators.png" alt="Classifiction report" >
+
+• Boosting is often robust to overfitting.
+
+• Test set error decreases even after training error is almost zero
+
+**After Training over all the data (training + validation):**
+
+<img src="assets/AdaBoost/test_metrics.png" alt="Classifiction report" >
+
+**Classification Report for Test Set:**
+
+<img src="assets/AdaBoost/test_classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for Testset:**
+
+<img src="assets/AdaBoost/test_confusion_matrix.png" alt="Classifiction report" >
