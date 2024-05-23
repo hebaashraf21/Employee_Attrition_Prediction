@@ -9,7 +9,7 @@ By developing a machine learning model that can predict employee attrition, orga
 
 ## 🗂️ Dataset
 We used the publicly available dataset on employee attrition: the IBM HR Analytics Employee Attrition & Performance dataset, which contains information about employees' demographics, job role, satisfaction levels, etc.<br>
-Link: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data
+[Link](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data)
 
 ## ❔ Evaluation metrics
 The performance of our machine learning model will be evaluated using metrics such as accuracy, precision, recall, and F1-score. <br> Given that the classes are imbalanced, we will use <strong>weighted f1-score</strong> as our main metric of evaluation.
