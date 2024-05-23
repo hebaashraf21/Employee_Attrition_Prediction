@@ -202,11 +202,11 @@ Changing the gamma parameter does not significantly affect the model's performan
 
 <img src="assets/SVM/c_vs_error_svm.png" alt="Classifiction report" >
 
--**Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
+- **Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
 
--**Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter (C) for the model where the model achieves the best balance between bias and variance, leading to optimal generalization to unseen data.
+- **Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter (C) for the model where the model achieves the best balance between bias and variance, leading to optimal generalization to unseen data.
 
--**Increase after Optimal C**: Beyond the optimal C value, both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
+- **Increase after Optimal C**: Beyond the optimal C value, both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
 
 **Learning Curve(scores):**
 
@@ -293,11 +293,11 @@ Overfitting Solved.
 
 <img src="assets/Linear SVM/c_vs_error_linearsvm.png" alt="Classifiction report" >
 
--**Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
+- **Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
 
--**Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter(C)for the model where the model achieves the best balance between bias and variance, leading to optimal generalization.
+- **Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter(C)for the model where the model achieves the best balance between bias and variance, leading to optimal generalization.
 
--**Increase after Optimal C**: Both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
+- **Increase after Optimal C**: Both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
 
 **Learning Curve:**
 
