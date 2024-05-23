@@ -2,14 +2,14 @@
 # Employee Attrition Prediction 🔮🏃‍♂️
 
 ## 🙇‍♂️ Problem definition and motivation
-Employee attrition, or the rate at which employees leave a company, is a significant concern for organizations due to the high costs associated with hiring and training new employees. According to recent data, the average cost per hire rose to $4,700 in 2023. For specialized positions such as cybersecurity, engineering, or nursing, the cost per hire can be even higher, reaching up to $28,329 for executive positions. These costs, combined with factors such as ultra-low unemployment rates and an aging workforce, highlight the importance of predicting and mitigating employee attrition. [source: https://toggl.com/blog/cost-of-hiring-an-employee ].<br>
+Employee attrition, or the rate at which employees leave a company, is a significant concern for organizations due to the high costs associated with hiring and training new employees. According to recent data, the average cost per hire rose to $4,700 in 2023. For specialized positions such as cybersecurity, engineering, or nursing, the cost per hire can be even higher, reaching up to $28,329 for executive positions. These costs, combined with factors such as ultra-low unemployment rates and an aging workforce, highlight the importance of predicting and mitigating employee attrition. ([source](https://toggl.com/blog/cost-of-hiring-an-employee)).<br>
 <br>
 By developing a machine learning model that can predict employee attrition, organizations can take proactive measures to retain valuable talent and reduce turnover costs. This project aims to leverage machine learning techniques to analyze factors such as job satisfaction, salary, work-life balance, etc., and predict which employees are most likely to leave the company. By doing so, organizations can optimize their hiring and retention strategies, ultimately reducing the financial burden of employee turnover.
 
 
 ## 🗂️ Dataset
 We used the publicly available dataset on employee attrition: the IBM HR Analytics Employee Attrition & Performance dataset, which contains information about employees' demographics, job role, satisfaction levels, etc.<br>
-Link: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data
+[Link](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data)
 
 ## ❔ Evaluation metrics
 The performance of our machine learning model will be evaluated using metrics such as accuracy, precision, recall, and F1-score. <br> Given that the classes are imbalanced, we will use <strong>weighted f1-score</strong> as our main metric of evaluation.
@@ -24,9 +24,11 @@ The performance of our machine learning model will be evaluated using metrics su
 (4) Get the number of unique values for each column.<br>
 (5) Explore categorical featuresׂ <strong>➺</strong> Total number of categorical variable : 8<br>
 (6) Explore outliers <strong>➺</strong> Print number of outliers in each column.<br>
-(7) Confusion matrix:<br>
+(7) Show Correlation Between the target variables and each feature
+<img src="assets/correlation_matrix.png" alt="Correlation matrix Image" >
+(8) Confusion matrix:<br>
 <img src="assets/confusion_matrix.png" alt="Confusion matrix Image" >
-(8) Check data imbalance.<br>
+(9) Check data imbalance.<br>
 <img src="assets/data_balance.png" alt="Attrition Balance Image" >
 
 
@@ -40,3 +42,8 @@ The performance of our machine learning model will be evaluated using metrics su
 6- Resampling.<br>
 <img src="assets/after_resampling.png" alt="After resampling Image" >
 
+## Models
+
+### Zero-R model (baseline model):
+
+<img src="assets/zero-R-metrics.png" alt="Zero-R" >
