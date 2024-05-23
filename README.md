@@ -259,9 +259,9 @@ Overfitting Solved.
 
 **Confusion Matrix for Test set:**
 
-<img src="assets/SVM/confusion_matrix_test.png.png" alt="Classifiction report" >
+<img src="assets/SVM/confusion_matrix_test.png" alt="Classifiction report" >
 
-<br>
+---
 
 ## Models Results:
 
