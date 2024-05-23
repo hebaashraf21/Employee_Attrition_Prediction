@@ -269,6 +269,53 @@ Overfitting Solved.
 
 ### Linear SVM:
 
+**Performing grid search to get the best parameters:**
+
+<img src="assets/Linear SVM/grid_search.png" alt="Classifiction report" >
+
+**Parameters of Best Model:**
+
+<img src="assets/Linear SVM/best_model.png" alt="Classifiction report" >
+
+**Evaluation metrics on validation sets:**
+
+<img src="assets/Linear SVM/evaluation_metrics.png" alt="Classifiction report" >
+
+**Classification report for validation set:**
+
+<img src="assets/Linear SVM/classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for validation set:**
+
+<img src="assets/Linear SVM/confusion_matrix.png" alt="Classifiction report" >
+
+**C vs Error:**
+
+<img src="assets/Linear SVM/c_vs_error_linearsvm.png" alt="Classifiction report" >
+
+-**Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
+
+-**Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter(C)for the model where the model achieves the best balance between bias and variance, leading to optimal generalization.
+
+-**Increase after Optimal C**: Both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
+
+**Learning Curve:**
+
+<img src="assets/Linear SVM/learning_curve_linearsvm.png" alt="Classifiction report" >
+
+The model initially struggles to generalize well to the validation set, as indicated by the increasing training error and decreasing validation error. However, as the training set size increases, the model begins to generalize better, leading to both errors stabilizing. This indicates that the model has learned the underlying patterns in the data and is not overfitting.
+
+**Evaluation metrics on test sets:**
+
+<img src="assets/Linear SVM/testing_metrics.png" alt="Classifiction report" >
+
+**Classification report for test set:**
+
+<img src="assets/Linear SVM/testing_classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for test set:**
+
+<img src="assets/Linear SVM/test_confusion_matrix.png" alt="Classifiction report" >
 
 ## Models Results:
 
