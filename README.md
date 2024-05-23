@@ -169,3 +169,98 @@ rather learning meaningful patterns.
 **Confusion Matrix for Testset:**
 
 <img src="assets/LogisticRegression/test_confusion_matrix.png" alt="Classifiction report" >
+
+### SVM
+
+**Performing grid search to get the best parameters:**
+
+<img src="assets/SVM/grid_search.png" alt="Grid Search" >
+
+**Parameters of Best Model:**
+
+<img src="assets/SVM/best_model.png" alt="Best Model" >
+
+**Evaluation metrics on Validation Set:**
+
+<img src="assets/SVM/evaluation_metrics.png" alt="evaluation_metrics" >
+
+**Classification report for validation set:**
+
+<img src="assets/SVM/classification_report.png" alt="Classifiction report" >
+
+**Gamma vs Error:**
+
+<img src="assets/SVM/gamma_vs_error_svm.png" alt="Classifiction report" >
+
+Changing the gamma parameter does not significantly affect the model's performance on either the training or validation data.
+
+**C vs Error:**
+
+<img src="assets/SVM/c_vs_error_svm.png" alt="Classifiction report" >
+
+-**Initial Decrease**: At lower values of C, both the training and validation errors decrease. This indicates that the model is underfitting.
+
+-**Optimal C Value**: There is a point where the validation error reaches its minimum value, indicating the best regularization parameter (C) for the model where the model achieves the best balance between bias and variance, leading to optimal generalization to unseen data.
+
+-**Increase after Optimal C**: Beyond the optimal C value, both the training and validation errors start to increase. This is because higher values of C lead to overfitting, where the model becomes too complex.
+
+**Learning Curve(scores):**
+
+<img src="assets/SVM/learning_curve_svm_score.png" alt="Classifiction report" >
+
+**Learning Curve(errors):**
+
+<img src="assets/SVM/learning_curve_svm_error.png" alt="Classifiction report" >
+
+- The decreasing validation score indicates that the model's performance on unseen data is not improving as more training examples are provided.
+
+- This suggests that the model is not generalizing well to new instances and is not overfitting to the training data.
+
+- The gap between the training and validation scores is not small which suggests that the model is suffering from overfitting.
+
+  Overall, the learning curve suggests that the model's performance improves with more training examples up to a certain point, after which further increases in the training set size may lead to overfitting. It highlights the importance of balancing model complexity and dataset size for optimal performance.
+
+- Because of this overfitting i started to perform regularization by choosing the
+optimal value for C.
+
+We plotted the C vs Error again but this time we appended smaller values to the C list. Then We plotted the Learning curve again to ensure that the overfitting is solved.
+
+**C vs Error:**
+
+<img src="assets/SVM/c_vs_error_for_regularization_svm.png" alt="Classifiction report" >
+
+_Optimal C value=10_
+
+**Learning Curve after regularization:**
+
+<img src="assets/SVM/learning_curve_regularized_svm.png" alt="Classifiction report" >
+
+Overfitting Solved.
+
+**Evaluation metrics After Regularization:**
+
+<img src="assets/SVM/evaluation_metrics_regularization.png" alt="Classifiction report" >
+
+**Classification report for validation set after regularization:**
+
+<img src="assets/SVM/classification_report_reg.png" alt="Classifiction report" >
+
+**Confusion Matrix for validation set After Regularization:**
+
+<img src="assets/SVM/confusion_matrix_reg.png" alt="Classifiction report" >
+
+**Metrics on test set:**
+
+<img src="assets/SVM/testing_metrics.png" alt="Classifiction report" >
+
+**Classification Report on test set:**
+
+<img src="assets/SVM/testing_classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for Test set:**
+
+<img src="assets/SVM/confusion_matrix_test.png.png" alt="Classifiction report" >
+
+## Models Results:
+
+<img src="assets/models_comparison.png" alt="Classifiction report" >
