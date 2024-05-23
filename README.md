@@ -24,9 +24,11 @@ The performance of our machine learning model will be evaluated using metrics su
 (4) Get the number of unique values for each column.<br>
 (5) Explore categorical featuresׂ <strong>➺</strong> Total number of categorical variable : 8<br>
 (6) Explore outliers <strong>➺</strong> Print number of outliers in each column.<br>
-(7) Confusion matrix:<br>
+(7) Show Correlation Between the target variables and each feature
+<img src="assets/correlation_matrix.png" alt="Correlation matrix Image" >
+(8) Confusion matrix:<br>
 <img src="assets/confusion_matrix.png" alt="Confusion matrix Image" >
-(8) Check data imbalance.<br>
+(9) Check data imbalance.<br>
 <img src="assets/data_balance.png" alt="Attrition Balance Image" >
 
 
@@ -40,3 +42,8 @@ The performance of our machine learning model will be evaluated using metrics su
 6- Resampling.<br>
 <img src="assets/after_resampling.png" alt="After resampling Image" >
 
+## Models
+
+### Zero-R model (baseline model):
+
+<img src="assets/zero-R-metrics.png" alt="Zero-R" >
