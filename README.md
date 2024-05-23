@@ -116,6 +116,8 @@ The performance of our machine learning model will be evaluated using metrics su
 
 <img src="assets/AdaBoost/test_confusion_matrix.png" alt="Classifiction report" >
 
+---
+
 ### Logistic Regression
 
 **Performing grid search to get the best parameters:**
@@ -169,6 +171,8 @@ rather learning meaningful patterns.
 **Confusion Matrix for Testset:**
 
 <img src="assets/LogisticRegression/test_confusion_matrix.png" alt="Classifiction report" >
+
+---
 
 ### SVM
 
@@ -262,6 +266,9 @@ Overfitting Solved.
 <img src="assets/SVM/confusion_matrix_test.png" alt="Classifiction report" >
 
 ---
+
+### Linear SVM:
+
 
 ## Models Results:
 
