@@ -66,15 +66,15 @@ The performance of our machine learning model will be evaluated using metrics su
 
 <img src="assets/AdaBoost/val_classification_report.png" alt="Classifiction report" >
 
-**Confusion Matrix for validation set**
+**Confusion Matrix for validation set:**
 
 <img src="assets/AdaBoost/confusion_matrix.png" alt="Classifiction report" >
 
-**Learning Curve (Scores)**
+**Learning Curve (Scores):**
 
 <img src="assets/AdaBoost/learning_curve_score.png" alt="Classifiction report" >
 
-**Learning Curve (errors)**
+**Learning Curve (errors):**
 
 <img src="assets/AdaBoost/learning_curve_error.png" alt="Classifiction report" >
 
@@ -136,15 +136,15 @@ The performance of our machine learning model will be evaluated using metrics su
 
 <img src="assets/LogisticRegression/classification_report.png" alt="Classifiction report" >
 
-**Confusion Matrix for validation set**
+**Confusion Matrix for validation set:**
 
 <img src="assets/LogisticRegression/confusion_matrix.png" alt="Classifiction report" >
 
-**Learning Curve (Scores)**
+**Learning Curve (Scores):**
 
 <img src="assets/LogisticRegression/learning_curve_scores.png" alt="Classifiction report" >
 
-**Learning Curve (errors)**
+**Learning Curve (errors):**
 
 <img src="assets/LogisticRegression/learning_curve_errors.png" alt="Classifiction report" >
 
