@@ -80,31 +80,21 @@ The performance of our machine learning model will be evaluated using metrics su
 
 **AdaBoost Learning Curve Insights:**
 
-• The decreasing training score suggests that as more training examples are provided,
-the model is exposed to a wider variety of instances and is learning to generalize
-better.
+• The decreasing training score suggests that as more training examples are provided, the model is exposed to a wider variety of instances and is learning to generalize better.
 
-• This is a positive sign as it indicates that the model is not memorizing the training data
-but rather learning meaningful patterns.
+• This is a positive sign as it indicates that the model is not memorizing the training data but rather learning meaningful patterns.
 
-• The increasing validation score indicates that the model's performance on unseen
-data is improving as more training examples are provided.
+• The increasing validation score indicates that the model's performance on unseen data is improving as more training examples are provided.
 
-• This suggests that the model is generalizing well to new instances and is not overfitting
-to the training data.
+• This suggests that the model is generalizing well to new instances and is not overfitting to the training data.
 
-• The small gap between the training and validation scores suggests that the model is
-not suffering from significant overfitting.
+• The small gap between the training and validation scores suggests that the model is not suffering from significant overfitting.
 
-• The fact that both scores are increasing with a small gap indicates that the model is
-learning to generalize well to unseen data without excessively fitting to the training
-data.
+• The fact that both scores are increasing with a small gap indicates that the model is learning to generalize well to unseen data without excessively fitting to the training data.
 
-• The fact that both the training and validation scores are eventually increasing slowly
-that the model's performance is stabilizing as more data is provided.
+• The fact that both the training and validation scores are eventually increasing slowly that the model's performance is stabilizing as more data is provided.
 
-• This is a desirable outcome, indicating that additional data may not significantly
-improve the model's performance further.
+• This is a desirable outcome, indicating that additional data may not significantly improve the model's performance further.
 
 **Training & Validation errors vs number of learning estimators:**
 
@@ -125,3 +115,57 @@ improve the model's performance further.
 **Confusion Matrix for Testset:**
 
 <img src="assets/AdaBoost/test_confusion_matrix.png" alt="Classifiction report" >
+
+### Logistic Regression
+
+**Performing grid search to get the best parameters:**
+
+<img src="assets/LogisticRegression/grid_search.png" alt="Grid Search" >
+
+**Parameters of Best Model:**
+
+<img src="assets/LogisticRegression/best_model.png" alt="Best Model" >
+
+**Evaluation metrics on Validation Set:**
+
+<img src="assets/LogisticRegression/evaluation_metrics.png" alt="evaluation_metrics" >
+
+**Classification report for validation set:**
+
+<img src="assets/LogisticRegression/classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for validation set**
+
+<img src="assets/LogisticRegression/confusion_matrix.png" alt="Classifiction report" >
+
+**Learning Curve (Scores)**
+
+<img src="assets/LogisticRegression/learning_curve_scores.png" alt="Classifiction report" >
+
+**Learning Curve (errors)**
+
+<img src="assets/LogisticRegression/learning_curve_errors.png" alt="Classifiction report" >
+
+**LogisticRegression Learning Curve Insights:**
+
+• The decreasing training score suggests that as more training examples are provided,
+the model is exposed to a wider variety of instances and is learning to generalize better.
+This is a positive sign as it indicates that the model is not memorizing the training data but
+rather learning meaningful patterns.
+
+• The increasing validation score indicates that the model's performance on unseen data is improving as more training examples are provided. This suggests that the model is generalizing well to new instances and is not overfitting to the training data.
+
+• The small gap between the training and validation scores suggests that the model is not suffering from significant overfitting. The fact that both scores are increasing with a small gap indicates that the model is learning to generalize well to unseen data without excessively fitting to the training data.
+
+
+**After Training over all the data (training + validation):**
+
+<img src="assets/LogisticRegression/test_metrics.png" alt="Classifiction report" >
+
+**Classification Report for Test Set:**
+
+<img src="assets/LogisticRegression/test_classification_report.png" alt="Classifiction report" >
+
+**Confusion Matrix for Testset:**
+
+<img src="assets/LogisticRegression/test_confusion_matrix.png" alt="Classifiction report" >
