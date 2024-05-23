@@ -261,6 +261,8 @@ Overfitting Solved.
 
 <img src="assets/SVM/confusion_matrix_test.png.png" alt="Classifiction report" >
 
+<br>
+
 ## Models Results:
 
 <img src="assets/models_comparison.png" alt="Classifiction report" >
