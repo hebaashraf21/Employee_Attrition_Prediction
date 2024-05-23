@@ -42,7 +42,7 @@ The performance of our machine learning model will be evaluated using metrics su
 6- Resampling.<br>
 <img src="assets/after_resampling.png" alt="After resampling Image" >
 
-## Models
+## 🔩 Models
 
 ### Zero-R model (baseline model):
 
